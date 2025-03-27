@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Lendariox",
+    "slug": "lendariox",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ademisson.lendariox",
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-updates"
+    ],
+    "description": "Aplicativo de leitura de ebooks com funcionalidades de biblioteca digital, marcação de progresso e visualização de PDF",
+    "githubUrl": "https://github.com/ademisson-Auto/Lendariox",
+    "extra": {
+      "eas": {
+        "projectId": "e98bf807-d1b7-4082-a1af-952bd0601ec9"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e98bf807-d1b7-4082-a1af-952bd0601ec9",
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "checkAutomatically": "ON_LOAD"
+    },
+    "owner": "ademisson"
+  }
+}
