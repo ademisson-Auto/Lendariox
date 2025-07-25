@@ -1,37 +1,98 @@
-# LENDARIOX
+<div align="center">
+  <img src="assets/icon.png" alt="Lendariox Logo" width="120" />
+  
+  # 📚 LENDARIOX
+  
+  **Aplicativo completo de leitura de ebooks para React Native**
+  
+  *Biblioteca digital moderna com suporte a PDF/EPUB, anotações e sincronização offline*
+  
+  [![React Native](https://img.shields.io/badge/React%20Native-0.76.7-blue.svg)](https://reactnative.dev/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue.svg)](https://www.typescriptlang.org/)
+  [![Expo](https://img.shields.io/badge/Expo-52.0.41-black.svg)](https://expo.dev/)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+  
+  [📱 Demo](#-demonstração) • [⚡ Instalação](#-instalação-rápida) • [🚀 Deploy](#-deploy) • [📖 Documentação](#-documentação)
+  
+</div>
 
-Aplicativo de leitura de ebooks com funcionalidades de biblioteca digital, marcação de progresso, visualização de PDF e EPUB.
+## 🎯 Características Principais
 
-<p align="center">
-  <img src="assets/icon.png" alt="Logo Lendariox" width="150" />
-</p>
+<table>
+  <tr>
+    <td>📱</td>
+    <td><strong>Plataforma Móvel</strong></td>
+    <td>Desenvolvido com React Native para iOS e Android</td>
+  </tr>
+  <tr>
+    <td>📚</td>
+    <td><strong>Multi-formato</strong></td>
+    <td>Suporte completo a PDF e EPUB</td>
+  </tr>
+  <tr>
+    <td>🔒</td>
+    <td><strong>Segurança</strong></td>
+    <td>Autenticação via Supabase e armazenamento seguro</td>
+  </tr>
+  <tr>
+    <td>🔄</td>
+    <td><strong>Offline-first</strong></td>
+    <td>Funciona perfeitamente offline com sincronização automática</td>
+  </tr>
+  <tr>
+    <td>⚡</td>
+    <td><strong>Performance</strong></td>
+    <td>Streaming progressivo e cache inteligente</td>
+  </tr>
+  <tr>
+    <td>🎨</td>
+    <td><strong>UX Moderna</strong></td>
+    <td>Interface intuitiva com animações fluidas</td>
+  </tr>
+</table>
 
-## Sobre o Projeto
+## 📱 Demonstração
+
+> **Nota:** Screenshots e demo em vídeo serão adicionados em breve!
+
+## 🚀 Sobre o Projeto
 
 Lendariox é uma plataforma completa para leitura de e-books que oferece uma experiência personalizada e intuitiva para leitores. O aplicativo permite gerenciar sua biblioteca digital, acompanhar seu progresso de leitura e acessar seus livros favoritos em qualquer lugar.
 
-## Tecnologias
+## 🚀 Stack Tecnológico
 
-- **Frontend:**
-  - React Native 0.76.7
-  - Expo 52.0.41
-  - TypeScript 5.8.2
-  - React Navigation 7.0
-  - Reanimated 3.16.1
-  
-- **Backend:**
-  - Supabase (autenticação e banco de dados)
-  - Expo File System para cache local
-  
-- **Visualização de Documentos:**
-  - React Native PDF
-  - Suporte para arquivos EPUB
-  
-- **Utilitários:**
-  - Lottie para animações
-  - Expo Secure Store para armazenamento seguro
-  - Expo Updates para atualizações OTA
-  - Linear Gradient para interfaces modernas
+### Frontend & Mobile
+```
+📱 React Native 0.76.7    - Framework mobile nativo
+⚡ Expo 52.0.41            - Plataforma de desenvolvimento
+🔷 TypeScript 5.8.2       - Tipagem estática
+🧭 React Navigation 7.0   - Navegação entre telas
+🎨 Reanimated 3.16.1       - Animações de alta performance
+```
+
+### Backend & Dados
+```
+🔋 Supabase                - Backend-as-a-Service
+🔐 Supabase Auth          - Autenticação segura
+💾 PostgreSQL             - Banco de dados relacional
+📁 Expo File System       - Cache local e gerenciamento de arquivos
+```
+
+### Leitura & Documentos
+```
+📄 React Native PDF       - Renderização de PDF nativo
+📚 EPUB Support           - Suporte completo a ebooks EPUB
+🔖 Streaming Progressive   - Carregamento inteligente
+```
+
+### UX & Interface
+```
+🎨 Lottie                  - Animações vectoriais
+🔒 Expo Secure Store      - Armazenamento criptografado
+🔄 Expo Updates           - Atualizações OTA
+🌈 Linear Gradient        - Gradientes modernos
+```
 
 ## Funcionalidades
 
@@ -95,15 +156,31 @@ O aplicativo utiliza o Supabase como backend com as seguintes tabelas:
 - `annotations`: Anotações de leitura
 - `notifications`: Sistema de notificações
 
-## Instalação
+## ⚡ Instalação Rápida
 
 ```bash
-# Instalar dependências
+# Clone o repositório
+git clone https://github.com/ademisson-Auto/Lendariox.git
+cd Lendariox
+
+# Instale as dependências
 npm install
 
-# Iniciar o servidor de desenvolvimento
+# Configure as variáveis de ambiente
+cp .env.example .env
+# Edite o .env com suas credenciais do Supabase
+
+# Inicie o projeto
 npx expo start
 ```
+
+### 📝 Pré-requisitos
+
+- Node.js 18+
+- npm ou yarn
+- Expo CLI global: `npm install -g @expo/cli`
+- Conta no [Supabase](https://supabase.com) (gratuita)
+- Expo Go app no seu dispositivo (para testes)
 
 ## Desenvolvimento
 
@@ -152,10 +229,60 @@ Este projeto está configurado para deploy automático no Expo via GitHub Action
    npx eas build --platform all
    ```
 
-## Contribuições
+## 🛣️ Roadmap
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+### 🕰️ Próximas Atualizações
 
-## Licença
+- [ ] 📸 **Screenshots & Demo** - Adicionar imagens e vídeo demonstrativo
+- [ ] 🌍 **Internacionalização** - Suporte a múltiplos idiomas
+- [ ] 🔍 **Busca Avançada** - Busca por conteúdo dentro dos livros
+- [ ] 📈 **Analytics** - Estatísticas avançadas de leitura
+- [ ] 🎙️ **Audiobooks** - Suporte a livros em áudio
+- [ ] 🚀 **Performance** - Otimizações e melhorias
 
-Este projeto está licenciado sob os termos da licença MIT. 
+### 💡 Ideias Futuras
+
+- 🤝 **Social** - Compartilhamento e recomendações
+- 🎨 **Temas** - Personalização avançada de interface
+- ☁️ **Sincronização** - Backup na nuvem
+- 🤖 **IA** - Recomendações inteligentes
+
+## 🤝 Como Contribuir
+
+Contribuições são muito bem-vindas! Aqui está como você pode ajudar:
+
+### 🐛 Reportar Bugs
+1. Verifique se o bug já foi reportado nas [Issues](https://github.com/ademisson-Auto/Lendariox/issues)
+2. Crie uma nova issue com detalhes do problema
+3. Inclua screenshots e informações do dispositivo
+
+### ✨ Sugerir Melhorias
+1. Abra uma issue com o label `enhancement`
+2. Descreva detalhadamente sua ideia
+3. Explique por que seria útil
+
+### 📝 Contribuir com Código
+1. Faça um fork do projeto
+2. Crie uma branch: `git checkout -b feature/nova-funcionalidade`
+3. Commit suas mudanças: `git commit -m 'Adiciona nova funcionalidade'`
+4. Push para a branch: `git push origin feature/nova-funcionalidade`
+5. Abra um Pull Request
+
+## 📋 Licença
+
+Este projeto está licenciado sob a **Licença MIT** - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+<div align="center">
+  
+  **📚 Lendariox - Transformando a leitura digital**
+  
+  Desenvolvido com ❤️ por [Ademisson](https://github.com/ademisson-Auto)
+  
+  [![GitHub](https://img.shields.io/badge/GitHub-ademisson--Auto-black?logo=github)](https://github.com/ademisson-Auto)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/ademisson)
+  
+  **Se este projeto te ajudou, deixe uma ⭐!**
+  
+</div>
